@@ -4,6 +4,7 @@
 
 class Square:
     """Represents a square."""
+
     def __init__(self, size=0):
         self.size = size
 
@@ -20,7 +21,7 @@ class Square:
         self.__size = value
 
     def area(self):
-        return self.__size**2
+        return self.__size ** 2
 
 
 if __name__ == "__main__":
@@ -35,4 +36,3 @@ if __name__ == "__main__":
         print("Area: {} for size: {}".format(my_square.area(), my_square.size))
     except Exception as e:
         print(e)
-        
