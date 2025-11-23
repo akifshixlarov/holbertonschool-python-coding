@@ -13,15 +13,13 @@ class Square:
 
         self.__size = size
 
+    def area(self):
+        return self.__size**2
+
 
 if __name__ == "__main__":
     my_square_1 = Square(3)
-    print(type(my_square_1))
-    print(my_square_1.__dict__)
-
-    my_square_2 = Square()
-    print(type(my_square_2))
-    print(my_square_2.__dict__)
+    print("Area: {}".format(my_square_1.area()))
 
     try:
         print(my_square_1.size)
@@ -33,17 +31,6 @@ if __name__ == "__main__":
     except Exception as e:
         print(e)
 
-    try:
-        my_square_3 = Square("3")
-        print(type(my_square_3))
-        print(my_square_3.__dict__)
-    except Exception as e:
-        print(e)
-
-    try:
-        my_square_4 = Square(-89)
-        print(type(my_square_4))
-        print(my_square_4.__dict__)
-    except Exception as e:
-        print(e)
-        
+    my_square_2 = Square(5)
+    print("Area: {}".format(my_square_2.area()))
+    
